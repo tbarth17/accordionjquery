@@ -1,0 +1,50 @@
+$background-blue : #1275bf;
+$outline-blue: #083451;
+
+@mixin general-formatting{
+  width: 400px;
+  margin:0;
+  padding: 0;
+  overflow:hidden;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+
+.accordion {
+  @include general-formatting;
+  border: 2px $outline-blue solid;
+  @include border-radius(5px);
+  box-shadow:  		0 5px 15px 1px rgba(0, 0, 0, 0.6),
+                  0 0 200px 1px rgba(255, 255, 255, 0.5);
+}
+
+h3 {
+  height: 34px;
+  background-color: $background-blue;
+  text-align: center;
+  @include general-formatting;
+  padding-top: 10px;
+  cursor:pointer;
+  outline: 1px solid $outline-blue;
+}
+
+.tabs {
+ height:0;
+ overflow: hidden;
+ transition: .5s;
+ outline: 1px solid $outline-blue;
+}
+
+.tabs.open {
+  @include general-formatting;
+  height:200px;
+  transition: .5s;
+  outline: 1px solid $outline-blue;
+}

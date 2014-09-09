@@ -1,0 +1,38 @@
+.accordion {
+  width: 400px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 2px #083451 solid;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.6), 0 0 200px 1px rgba(255, 255, 255, 0.5); }
+
+h3 {
+  height: 34px;
+  background-color: #1275bf;
+  text-align: center;
+  width: 400px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  padding-top: 10px;
+  cursor: pointer;
+  outline: 1px solid #083451; }
+
+.tabs {
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  outline: 1px solid #083451; }
+
+.tabs.open {
+  width: 400px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 200px;
+  transition: 0.5s;
+  outline: 1px solid #083451; }
